@@ -3,94 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="style" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
-    <header>
-      <div class="form-groups">
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
-        </form>
-      </div>
-    </header>
-    <main>
-      <h2>South Africa</h2>
-      <h1>Pretoria</h1>
-      <h3>Today 22:52</h3>
-      <section>
-        <div>
-          <p>
-            ☀️ 25°
+    <section class="container">
+      <header>
+        <div class="form-groups">
+          <form>
+            <input type="search" placeholder="Enter a city..." required />
+            <input type="submit" value="search" />
+          </form>
+        </div>
+      </header>
+      <main>
+        <strong>
+          <h2 class="country">South Africa</h2>
+          <h1 class="city">Pretoria</h1>
+          <h3 class="Day-and-time">Today 22:52</h3>
+        </strong>
+        <section class="day">
+          <div class="days-temp">
+            <p>
+              <span class="emoji-weather-main">☀️</span
+              ><strong
+                ><span class="current-degree">25°</span>
+                <br />
+                <span class="currently">It's a sunny day</span></strong
+              >
+            </p>
+          </div>
+          <div>
+            <strong> High:</strong> 28° <strong>Low:</strong> 18°
             <br />
-            It's a sunny day
-          </p>
-        </div>
-        <div>
-          High: 28° Low: 18°
+            <strong>Feels like:</strong> 24°
+            <br />
+            <strong>Humidity:</strong> 40%
+            <br />
+            <strong>Wind:</strong> 20 km/hr
+          </div>
+        </section>
+        <p class="this-week"><strong>This week</strong></p>
+        <div class="weeks">
+          <div>
+            <div class="weekdays">Mon</div>
+            <span class="emoji-weather">🌦️</span>
+            <br />
+            <span class="high-temp">18°</span><span class="low-temp">10°</span>
+          </div>
           <br />
-          Feels like: 24°
+          <div>
+            <div class="weekdays">Tues</div>
+            <span class="emoji-weather">⛈️</span>
+            <br />
+            <span class="high-temp">15°</span><span class="low-temp">10°</span>
+          </div>
           <br />
-          Humidity: 40%
+          <div>
+            <div class="weekdays">Wed</div>
+            <span class="emoji-weather">🌥️</span>
+            <br />
+            <span class="high-temp">20°</span><span class="low-temp">15°</span>
+          </div>
           <br />
-          Wind: 20 km/hr
-        </div>
-      </section>
-      <p>This week</p>
-      <div class="weeks">
-        <div>
-          <div class="weekdays">Mon</div>
-          🌦️
+          <div>
+            <div class="weekdays">Thurs</div>
+            <span class="emoji-weather">☀️</span>
+            <br />
+            <span class="high-temp">25°</span><span class="low-temp">17°</span>
+          </div>
           <br />
-          <span class="high-temp">18°</span><span class="low-temp">10°</span>
+          <div>
+            <div class="weekdays">Fri</div>
+            <span class="emoji-weather">☁️</span>
+            <br />
+            <span class="high-temp">19°</span><span class="low-temp">11°</span>
+          </div>
         </div>
         <br />
-        <div>
-          <div class="weekdays">Tues</div>
-          ⛈️
-          <br />
-          <span class="high-temp">15°</span><span class="low-temp">10°</span>
-        </div>
-        <br />
-        <div>
-          <div class="weekdays">Wed</div>
-          🌥️
-          <br />
-          <span class="high-temp">20°</span><span class="low-temp">15°</span>
-        </div>
-        <br />
-        <div>
-          <div class="weekdays">Thurs</div>
-          ☀️
-          <br />
-          <span class="high-temp">25°</span><span class="low-temp">17°</span>
-        </div>
-        <br />
-        <div>
-          <div class="weekdays">Fri</div>
-          ☁️
-          <br />
-          <span class="high-temp">19°</span><span class="low-temp">11°</span>
-        </div>
-      </div>
-      <br />
-      <footer>
-        This project was coded by
-        <a href="https://github.com/Kwetsimani/" target="_blank"
-          >Kwetsimani Shivuri</a
-        >
-        and is on an
-        <a
-          href="https://github.com/Kwetsimani/My-first-weather-project"
-          target="_blank"
-          >open source of GitHub</a
-        >
-        and
-        <a href="https://atmosphericweatherapp.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </footer>
-    </main>
+        <footer>
+          This project was coded by
+          <a href="https://github.com/Kwetsimani/" target="_blank"
+            >Kwetsimani Shivuri</a
+          >
+          and is on an
+          <a
+            href="https://github.com/Kwetsimani/My-first-weather-project"
+            target="_blank"
+            >open source of GitHub</a
+          >
+          and
+          <a href="https://atmosphericweatherapp.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </footer>
+      </main>
+    </section>
   </body>
 </html>
