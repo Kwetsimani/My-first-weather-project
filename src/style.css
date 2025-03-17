@@ -1,17 +1,25 @@
 .form-groups {
   width: 100px;
   height: 100px;
+  top: 25px;
+  position: relative;
 }
 
 .container {
-  align-items: center;
   display: block;
-  margin: 0 auto;
+  margin: 30px auto;
   background-color: aliceblue;
+  padding: 30px;
+  max-width: 700px;
+}
+
+main {
+  top: -25px;
 }
 
 .country {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .city {
