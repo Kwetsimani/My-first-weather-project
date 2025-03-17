@@ -27,10 +27,11 @@
 .container {
   display: block;
   margin: 30px auto;
-  background-color: rgb(196, 187, 171);
+  background-color: rgb(189, 199, 199);
   padding: 30px;
   max-width: 600px;
   border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 main {
@@ -38,26 +39,31 @@ main {
 }
 
 .country {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .city {
-  font-size: 36px;
+  font-size: 38px;
+  top: -10px;
+  line-height: 1.5px;
 }
 
 .day-and-time {
-  font-size: 20px;
+  font-size: 18px;
+  top: -10px;
+  line-height: 1.5px;
 }
 .day {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 90%;
   border: 2px solid rgb(228, 226, 226);
   border-radius: 20px;
-  border-style: outset;
+  border-style: ridge;
   box-shadow: 10px;
+  background-color: rgb(205, 216, 212);
+  padding: 10px;
 }
 .weather {
   line-height: 150%;
@@ -72,8 +78,7 @@ main {
 .weeks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-gap: 3px;
-  box-sizing: border-box;
+  grid-gap: 1px;
 }
 
 .emoji-weather-main {
@@ -82,6 +87,7 @@ main {
 
 .emoji-weather {
   align-items: center;
+  padding: 10px;
   font-size: 20px;
 }
 
@@ -89,12 +95,18 @@ main {
   font-size: 20px;
 }
 .week-temp {
-  border: 5px solid rgb(228, 226, 226);
+  border: 2px solid rgb(228, 226, 226);
+  background-color: rgb(205, 216, 212);
   border-radius: 20px;
-  border-style: double outset;
+  border-style: ridge;
   box-shadow: 0px;
-  padding: 15px;
+  padding: 17px;
   margin: 0 auto;
+  transition: all 200ms;
+}
+.week-temp:hover {
+  cursor: pointer;
+  background-color: rgb(151, 163, 161);
 }
 .weekdays {
   font-size: 18px;
@@ -112,7 +124,7 @@ main {
 }
 
 footer {
-  align-items: center;
+  text-align: center;
   color: rgb(78, 76, 76);
   font-size: 16px;
 }
