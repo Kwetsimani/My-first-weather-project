@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="style" href="style.css" />
     <title>Weather app</title>
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
+      <div class="form-groups">
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="search" />
+        </form>
+      </div>
     </header>
     <main>
       <h2>South Africa</h2>
@@ -36,43 +38,59 @@
         </div>
       </section>
       <p>This week</p>
-      <span>
+      <div class="weeks">
         <div>
-          Mon
-          <br />
+          <div class="weekdays">Mon</div>
           🌦️
           <br />
-          18°<span>10°</span>
+          <span class="high-temp">18°</span><span class="low-temp">10°</span>
         </div>
+        <br />
         <div>
-          Tues
-          <br />
+          <div class="weekdays">Tues</div>
           ⛈️
           <br />
-          15°<span>10°</span>
+          <span class="high-temp">15°</span><span class="low-temp">10°</span>
         </div>
+        <br />
         <div>
-          Wed
-          <br />
+          <div class="weekdays">Wed</div>
           🌥️
           <br />
-          20°<span>15°</span>
+          <span class="high-temp">20°</span><span class="low-temp">15°</span>
         </div>
+        <br />
         <div>
-          Thurs
-          <br />
+          <div class="weekdays">Thurs</div>
           ☀️
           <br />
-          25°<span>17°</span>
+          <span class="high-temp">25°</span><span class="low-temp">17°</span>
         </div>
+        <br />
         <div>
-          Fri
-          <br />
+          <div class="weekdays">Fri</div>
           ☁️
           <br />
-          19°<span>11°</span>
+          <span class="high-temp">19°</span><span class="low-temp">11°</span>
         </div>
-      </span>
+      </div>
+      <br />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Kwetsimani/" target="_blank"
+          >Kwetsimani Shivuri</a
+        >
+        and is on an
+        <a
+          href="https://github.com/Kwetsimani/My-first-weather-project"
+          target="_blank"
+          >open source of GitHub</a
+        >
+        and
+        <a href="https://atmosphericweatherapp.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
     </main>
   </body>
 </html>
