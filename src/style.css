@@ -9,14 +9,15 @@
   background-color: rgb(224, 221, 216);
   border: none;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 100%;
   font-size: 16px;
-  padding: 15px 20px;
+  padding: 15px 25%;
+  text-align: left;
 }
 
 .form-button {
   border: none;
-  background-color: rgb(119, 118, 115);
+  background-color: rgb(161, 158, 149);
   border-radius: 5px;
   max-width: 20%;
   font-size: 16px;
@@ -26,9 +27,10 @@
 .container {
   display: block;
   margin: 30px auto;
-  background-color: aliceblue;
+  background-color: rgb(196, 187, 171);
   padding: 30px;
-  max-width: 700px;
+  max-width: 600px;
+  border-radius: 10px;
 }
 
 main {
@@ -47,17 +49,30 @@ main {
 .day-and-time {
   font-size: 20px;
 }
-
+.day {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border: 2px solid rgb(228, 226, 226);
+  border-radius: 20px;
+  border-style: outset;
+  box-shadow: 10px;
+}
+.weather {
+  line-height: 150%;
+}
 .current-degree {
   font-size: 45px;
 }
 .currently {
   font-size: 26px;
+  padding: 60px;
 }
 .weeks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 3px;
   box-sizing: border-box;
 }
 
@@ -73,7 +88,14 @@ main {
 .this-week {
   font-size: 20px;
 }
-
+.week-temp {
+  border: 5px solid rgb(228, 226, 226);
+  border-radius: 20px;
+  border-style: double outset;
+  box-shadow: 0px;
+  padding: 15px;
+  margin: 0 auto;
+}
 .weekdays {
   font-size: 18px;
   text-align: center;
