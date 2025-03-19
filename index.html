@@ -10,12 +10,13 @@
     <section class="container">
       <header>
         <span class="form-groups">
-          <form>
+          <form class="search-form" id="search-form">
             <input
               type="search"
               placeholder="Enter a city..."
               required
-              class="search-form"
+              class="search-form-input"
+              id="search-form-input"
             />
             <button type="submit" value="search" class="form-button">
               Search
@@ -25,9 +26,9 @@
       </header>
       <main>
         <strong>
-          <h2 class="country">South Africa</h2>
-          <h1 class="city">Pretoria</h1>
-          <h3 class="day-and-time">Today 22:52</h3>
+          <h2 class="country" id="country">South Africa</h2>
+          <h1 class="city" id="city">Pretoria</h1>
+          <h3 class="day-and-time" id="day-and-time">Today 22:52</h3>
         </strong>
         <div class="day">
           <div class="days-temp">
@@ -106,5 +107,6 @@
         </footer>
       </main>
     </section>
+    <script src="src/index.js"></script>
   </body>
 </html>

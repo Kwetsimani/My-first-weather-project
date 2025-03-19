@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 
-.search-form {
+.search-form-input {
   background-color: rgb(224, 221, 216);
   border: none;
   border-radius: 5px;
