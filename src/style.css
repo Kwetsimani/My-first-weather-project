@@ -72,12 +72,15 @@ main {
   line-height: 150%;
 }
 .current-degree {
-  font-size: 45px;
+  font-size: 30px;
+  justify-content: left;
 }
-.currently {
-  font-size: 26px;
-  padding: 60px;
+
+.current-weather {
+  display: flex;
+  justify-content: left;
 }
+
 .weeks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -86,6 +89,8 @@ main {
 
 .emoji-weather-main {
   font-size: 50px;
+  display: flex;
+  justify-items: left;
 }
 
 .emoji-weather {
