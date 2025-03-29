@@ -1,6 +1,8 @@
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${response.data.temperature.current}°C`;
+  temperatureElement.innerHTML = `${Math.round(
+    response.data.temperature.current
+  )}°C`;
 
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
@@ -9,7 +11,9 @@ function refreshWeather(response) {
   descriptionElement.innerHTML = response.data.condition.description;
 
   let feelsLikeElement = document.querySelector("#feels-like");
-  feelsLikeElement.innerHTML = `${response.data.temperature.feels_like}°C`;
+  feelsLikeElement.innerHTML = `${Math.round(
+    response.data.temperature.feels_like
+  )}°C`;
 
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -42,6 +46,9 @@ function formatDate(date) {
   ];
 
   let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes`0${minutes}`;
+  }
   return `${day} ${hours}:${minutes}`;
 }
 
