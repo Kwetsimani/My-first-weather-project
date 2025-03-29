@@ -30,7 +30,7 @@ body {
 .container {
   display: block;
   margin: 30px auto;
-  background-color: rgb(189, 199, 199);
+  background-color: rgb(158, 167, 167);
   padding: 30px;
   max-width: 600px;
   border-radius: 10px;
@@ -58,27 +58,27 @@ main {
 }
 .day {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 90%;
-  border: 2px solid rgb(228, 226, 226);
+  border: 2px solid rgb(196, 191, 191);
   border-radius: 20px;
   border-style: ridge;
   box-shadow: 10px;
-  background-color: rgb(214, 224, 220);
-  padding: 20px;
+  background-color: rgb(120, 144, 151);
+  padding: 2px;
 }
 .weather {
   line-height: 150%;
+  display: inline-flexbox;
 }
 .current-degree {
-  font-size: 30px;
-  justify-content: left;
+  font-size: 28px;
 }
 
 .current-weather {
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
 }
 
 .weeks {
@@ -88,8 +88,8 @@ main {
 }
 
 .emoji-weather-main {
-  font-size: 50px;
-  display: flex;
+  font-size: 45px;
+  display: block;
   justify-items: left;
 }
 

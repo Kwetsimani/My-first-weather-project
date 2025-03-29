@@ -33,7 +33,13 @@
         </strong>
         <div class="day">
           <div class="days-temp">
-            <span class="emoji-weather-main">☀️</span>
+            <span class="emoji-weather-main"
+              ><div id="weather-icon">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
+                  class="emoji-weather-main"
+                /></div
+            ></span>
             <div class="current-weather" id="current-weather">
               <strong>
                 <span class="current-degree" id="temperature"></span>
@@ -42,9 +48,6 @@
             </div>
           </div>
           <div class="weather">
-            <strong id="high"> High:</strong> 28°
-            <strong id="low">Low:</strong> 18°
-            <br />
             <strong>Feels like:</strong> <span id="feels-like"></span>
             <br />
             <strong>Humidity:</strong> <span id="humidity"></span>
@@ -52,43 +55,8 @@
             <strong>Wind:</strong> <span id="wind"></span>
           </div>
         </div>
-        <p class="this-week"><strong>THIS WEEK</strong></p>
-        <div class="weeks">
-          <div class="week-temp">
-            <div class="weekdays">Mon</div>
-            <span class="emoji-weather">🌦️</span>
-            <br />
-            <span class="high-temp">18°</span><span class="low-temp">10°</span>
-          </div>
-          <br />
-          <div class="week-temp">
-            <div class="weekdays">Tues</div>
-            <span class="emoji-weather">⛈️</span>
-            <br />
-            <span class="high-temp">15°</span><span class="low-temp">10°</span>
-          </div>
-          <br />
-          <div class="week-temp">
-            <div class="weekdays">Wed</div>
-            <span class="emoji-weather">🌥️</span>
-            <br />
-            <span class="high-temp">20°</span><span class="low-temp">15°</span>
-          </div>
-          <br />
-          <div class="week-temp">
-            <div class="weekdays">Thurs</div>
-            <span class="emoji-weather">☀️</span>
-            <br />
-            <span class="high-temp">25°</span><span class="low-temp">17°</span>
-          </div>
-          <br />
-          <div class="week-temp">
-            <div class="weekdays">Fri</div>
-            <span class="emoji-weather">☁️</span>
-            <br />
-            <span class="high-temp">19°</span><span class="low-temp">11°</span>
-          </div>
-        </div>
+        <br />
+        <hr />
         <br />
         <footer>
           This project was coded by
