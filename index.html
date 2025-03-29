@@ -27,31 +27,29 @@
       </header>
       <main>
         <strong>
-          <h2 class="country" id="country">South Africa</h2>
-          <h1 class="city" id="city">Pretoria</h1>
-          <h3 class="day-and-time" id="day-and-time">Today 22:52</h3>
+          <h2 class="country" id="country"></h2>
+          <h1 class="city" id="city"></h1>
+          <h3 class="day-and-time" id="day-and-time"></h3>
         </strong>
         <div class="day">
           <div class="days-temp">
             <span class="emoji-weather-main">☀️</span>
             <div class="current-weather" id="current-weather">
-              <strong
-                ><span class="current-degree"
-                  >25°C
-                  <br />
-                  Bright day</span
-                ></strong
-              >
+              <strong>
+                <span class="current-degree" id="temperature"></span>
+                <div class="day-temp" id="description">Bright day</div>
+              </strong>
             </div>
           </div>
           <div class="weather">
-            <strong> High:</strong> 28° <strong>Low:</strong> 18°
+            <strong id="high"> High:</strong> 28°
+            <strong id="low">Low:</strong> 18°
             <br />
-            <strong>Feels like:</strong> 24°
+            <strong>Feels like:</strong> <span id="feels-like"></span>
             <br />
-            <strong>Humidity:</strong> 40%
+            <strong>Humidity:</strong> <span id="humidity"></span>
             <br />
-            <strong>Wind:</strong> 20 km/hr
+            <strong>Wind:</strong> <span id="wind"></span>
           </div>
         </div>
         <p class="this-week"><strong>THIS WEEK</strong></p>
