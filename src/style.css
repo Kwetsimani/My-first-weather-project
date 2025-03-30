@@ -77,58 +77,23 @@ main {
 }
 
 .current-weather {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.weeks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-gap: 1px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .emoji-weather-main {
-  font-size: 45px;
-  display: block;
-  justify-items: left;
+  font-size: 55px;
+  display: left;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .emoji-weather {
   align-items: center;
   padding: 10px;
   font-size: 20px;
-}
-
-.this-week {
-  font-size: 20px;
-}
-.week-temp {
-  border: 2px solid rgb(228, 226, 226);
-  background-color: rgb(214, 224, 220);
-  border-radius: 20px;
-  border-style: ridge;
-  box-shadow: 0px;
-  padding: 17px;
-  margin: 0 auto;
-  transition: all 200ms;
-}
-.week-temp:hover {
-  cursor: pointer;
-  background-color: rgb(151, 163, 161);
-}
-.weekdays {
-  font-size: 18px;
-  text-align: center;
-}
-
-.high-temp {
-  color: black;
-  font-size: 16px;
-}
-
-.low-temp {
-  color: rgb(100, 96, 96);
-  font-size: 16px;
 }
 
 footer {
