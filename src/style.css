@@ -104,15 +104,16 @@ main {
 
 .weather-forecast-date {
   font-size: 16px;
-
   text-align: center;
   color: black;
   line-height: 20px;
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 88px;
+  height: 83px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperature {
   text-align: center;
