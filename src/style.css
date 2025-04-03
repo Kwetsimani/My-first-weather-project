@@ -60,13 +60,13 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
   border: 2px solid rgb(196, 191, 191);
   border-radius: 20px;
   border-style: ridge;
   box-shadow: 10px;
   background-color: rgb(120, 144, 151);
-  padding: 2px;
 }
 .weather {
   line-height: 150%;
